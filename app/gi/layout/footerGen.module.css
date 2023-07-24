@@ -1,0 +1,25 @@
+/* Footer */
+
+.footer{
+    grid-column: span 8;
+    background-color: #25294A;
+    padding: 40px 20px;
+    
+    }
+    
+    .footer p{
+    text-align: center;
+    }
+    
+    .contact{
+    text-align: center;
+    }
+    
+    .contact a:visited{
+    color: aliceblue;
+    }
+    
+    .icon{
+    font-size: 30px;
+    margin: 30px 50px 0px 30px;
+    }

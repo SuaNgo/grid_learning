@@ -1,0 +1,100 @@
+
+#body{
+        background-color: #15172B;
+}
+ /*Sidebar*/  
+  .gi_page{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    grid-gap: 10px;
+    height: 100vh
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #25294A;
+    height: 100%;
+
+  }
+  
+  .navbar h1{
+    margin-left: 30px;
+    line-height: 80px;
+    font-size: 36px;
+    font-weight: bold;
+  
+  }
+ 
+  .navigator{
+    display: block;
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    color: rgb(207, 209, 211);
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  /*Contetn*/
+  .gi_content{
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #25294A;
+    height: 100%;
+  }
+
+  .box{
+    height: fit-content;
+    background-color: #2D325A;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .box1{
+    
+    height: fit-content;
+    background-color: #2D325A;
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .box2{
+    margin-top: -225px;
+    height: fit-content;
+    background-color: #2D325A;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  
+  .footer{
+    grid-column: span 4;
+    background-color: #25294A;
+    padding: 40px 20px;
+  
+  }
+  
+  .footer p{
+    text-align: center;
+  }
+  
+  .contact{
+    text-align: center;
+  }
+  
+  .contact a:visited{
+    color: aliceblue;
+  }
+  
+  .icon{
+    font-size: 30px;
+    margin: 30px 50px 0px 30px;
+  }
+  
+  

@@ -1,0 +1,41 @@
+    .gi_page{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    grid-gap: 10px;
+    height: 100vh
+    }
+    
+
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #25294A;
+    height: 100%;
+    
+    }
+    
+    .navbar h1{
+    margin-left: 30px;
+    line-height: 80px;
+    font-size: 36px;
+    font-weight: bold;
+    
+    }
+    
+    .navigator{
+    display: block;
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    color: rgb(207, 209, 211);
+    font-weight: 600;
+    font-size: 18px;
+    }
+    
+    .active{
+    background-color: #4D71D9;
+    }
+    

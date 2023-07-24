@@ -1,0 +1,58 @@
+#body{
+    background-color: #15172B;
+}
+
+.gi_page{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    grid-gap: 10px;
+    height: 100vh
+    }
+    
+
+/*Content*/
+.gi_characters{
+padding: 30px 20px;
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+gap: 20px;
+background-color: #25294A;
+height: 100%;
+}
+
+.box{
+height: fit-content;
+border-radius: 15px;
+background-color: #926D45;
+text-align: center;
+position: relative;
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:rgb(49, 48, 48); 
+    top:-11px;
+    right:-13px;
+    background-image: url("/elements/geo.webp");
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
+
+.character_pic{
+    background-image: url("/characters/albedo.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 106px;
+}
+.box p{
+    background-color: #2D325A;
+    border-radius: 0px 0px 10px 10px;
+    line-height: 26px;
+}
+
+

@@ -1,95 +1,44 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
 
+import styles from "./page.module.css";
+import Footer from "./layout/Footer";
+import CardContainer from "./layout/CardContainer";
+import Navbar from "./layout/Navbar";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <Navbar />
+      <div className={styles.intro_container}>
+        <div className={styles.intro_pic}></div>
+        <div className={styles.intro}>
+          <div className={styles.intro_item1}>
+            <h1>Chào mừng bạn đến với SuaNgo</h1>
+            <p>
+              Web lập ra để mình làm project những gì mình thích chứ chả có tác
+              dụng gì cả. Trong đây có thể là bách khoa toàn thư, kinh nghiệm
+              chơi game của mình hoặc cũng chả có gì cả. Thx~~
+            </p>
+          </div>
+          <div className={styles.intro_item1}>
+            <h1>Có những gì</h1>
+            <ul>
+              <li>Portfolio, CV???</li>
+              <li>Game wiki</li>
+              <li>Một vài thứ chưa nghĩ ra...</li>
+            </ul>
+          </div>
+          <div className={styles.intro_item1}>
+            <h1>Còn những gì</h1>
+            <ul>
+              <li>CSS lặp nhiều</li>
+              <li>Chia nhỏ code</li>
+              <li>Ảnh intro mờ</li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <CardContainer />
+      <Footer />
     </main>
-  )
+  );
 }
